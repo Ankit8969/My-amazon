@@ -1,0 +1,189 @@
+* {
+    box-sizing : content-box;
+    margin: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+}
+
+.item-container
+{
+    width : 252px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding:5px;
+    box-sizing: border-box;
+    transition : all 0.4s;
+    margin: 0 auto ;
+}
+
+.item-container:hover
+{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px #e0ece4;
+}
+
+.image-section
+{
+    width:100%;
+    height: 240px;
+}
+.image-section img
+{
+    width :100%;
+    height: 240px;
+}
+
+.short-dummy-text
+{
+    font-size: 14px;
+    color : #9ba4b4;
+}
+
+.rating-box
+{
+    align-items: center;
+    width : 46px;
+    height: 24px;
+    margin : 5px 0 5px 0;
+    background-color: #2b580c;
+    color :white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding:5px;
+    font-size: 12px;
+}
+
+.second
+{
+    text-decoration: line-through;
+    color: #9ba4b4;
+}
+
+.first
+{
+    font-weight: bold;
+}
+
+.third
+{
+    font-weight: bold;
+    color : #799351;
+}
+
+.rating-col
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.store 
+{
+    width : 70%;
+    height: auto;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
+    gap: 3rem 1rem;
+}
+
+
+.container
+{
+    width: 85%;
+    min-height: 252px;
+    display: flex;
+    flex-direction: row;
+    margin : 3% auto 3% auto ;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.main_discription
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.image_expand
+{
+    width :45%;
+}
+
+.image_expand img
+{
+    width : 100%;
+    min-height: 340px;
+}
+
+.main_discription_heading
+{
+    font-size : 1.5rem;
+}
+
+.tc
+{
+    font-weight: bolder;
+    color:#2874f0;
+}
+
+ul
+{
+    list-style-type: none;
+    padding-left : 0;
+}
+
+
+span img
+{
+    padding-right : 10px;
+}
+
+ul span
+{
+    padding-bottom: 5px;
+}
+
+
+@media (max-width : 736px)
+{
+    .item-container
+    {
+        width :100%;
+    }
+    
+    .go_corona1 ,.go_corona2
+    {
+        visibility: hidden;
+    }
+    .container
+    {
+        max-height: 264px;
+        overflow : hidden;
+    }
+    .main_discription_heading{
+        font-size: 15px;
+    }
+    .mail_discription_dummy_text
+    {
+        font-size: 10px;
+    }
+    .price span
+    {
+        font-size: 12px;
+    }
+    .main_discription h2
+    {
+        font-size: 15px;
+    }
+    .main_discription ul span
+    {
+        font-size: 12px;
+    }
+}
